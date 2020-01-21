@@ -1,0 +1,322 @@
+body
+    width 100%
+    margin 0
+    padding 0
+    font-family 'Open Sans', sans-serif
+
+/**
+*   HEADER
+**/
+header 
+    height 12vh
+
+nav.navbar
+    display flex
+    align-items center
+    justify-content space-between
+    width 78.5vw
+    margin-left 11.2vw
+    margin-top 1rem
+    animation appear 1.5s
+
+    img
+        width 18%
+
+    ul
+        display flex
+        flex-direction row
+
+        li
+            position relative
+            list-style none
+
+            a
+                display block
+                padding 1rem 1.875rem
+                text-decoration none
+                color black
+                font-weight bold
+                transition color 0.25s
+
+                &:hover
+                    transition color 0.25s
+                    color #50B2DF
+
+
+
+/**
+* INTRO
+**/
+
+.intro-container
+    height 80vh
+    display flex
+    align-items center
+    padding 0 15rem
+
+.intro
+    width 87%
+    position relative
+    animation appear 1.5s
+
+
+    @keyframes appear 
+    {
+        0% {opacity: 0}
+        100% {opacity: 1}
+    }
+
+    &::before
+        content ''
+        position absolute
+        top 50%
+        transform translateY(-50%)
+        left -3rem
+        background-color #50B2DF
+        border-radius 2px
+        width 0.4rem
+        height calc(100% - 20px)
+        animation sidebar 1s ease-out
+
+        @keyframes sidebar 
+        {
+            0% {height: 0% }
+            100% {height: calc(100% - 20px) }
+        }
+        
+    h1
+        font-size 2.625rem
+        margin-top 0
+        font-weight bold
+
+    p
+        width 41.8125rem
+        font-size 1.25rem
+        font-weight lighter
+        line-height 2.5rem
+        margin-bottom 0
+
+    a
+        text-decoration none
+        color black
+        font-weight bold
+        position relative
+
+        &::after
+            content ''
+            position absolute
+            z-index 1
+            bottom -1px
+            left 0
+            background-color #50b2df
+            width 5.5rem
+            height 100%
+            opacity 0.5
+            transform scaleY(0.1)
+            transform-origin bottom
+            transition transform 1000ms cubic-bezier(0, .8, .3, 1)
+
+        &:hover::after
+                transform scaleY(1)       
+
+/**
+*   MAIN
+**/
+
+.background
+    width 100%
+    background-color #F4FCFF 
+    padding-top 7rem
+
+    .project-container-1
+        background-color #D44973
+        width 73.4375rem
+        height 20.5rem
+        margin auto
+        display flex
+        border-radius 4px
+        margin-bottom 6rem
+        transition 0.3s ease-out
+        box-shadow 0px 4px 8px 0px rgba(34, 34, 34, 0.16)
+        
+
+        &:hover
+            transform scale(1.04)
+            transition 0.3s ease-out
+            box-shadow 0px 4px 8px 0px rgba(34, 34, 34, 0.32)
+
+        .text-project-1
+            color white
+            width 50%
+            padding 1.875rem 1.875rem 1.875rem 6.25rem
+
+            h2
+                font-weight bold
+                font-size 2.125rem
+                line-height 4rem
+            
+            h3
+                font-weight 600
+                font-size 1.25rem
+                line-height 2rem
+            
+            p
+                font-weight lighter
+                font-size 1.25rem
+                line-height 2rem
+            
+            a
+                text-decoration none
+                color white
+        
+        .img-project-1
+            width 50%
+            display flex
+            justify-content center
+            align-items center
+
+            img
+                width 80%
+
+    .project-container-2
+        background-color #2DAE98
+        width 73.4375rem
+        height 20.5rem
+        margin auto
+        display flex
+        border-radius 4px
+        margin-bottom 6rem
+        transition 0.3s ease-out
+        box-shadow 0px 4px 8px 0px rgba(34, 34, 34, 0.16)
+
+        &:hover
+            transform scale(1.04)
+            transition 0.3s ease-out
+            box-shadow 0px 4px 8px 0px rgba(34, 34, 34, 0.32) 
+
+        .text-project-2
+            color white
+            width 50%
+            padding 1.875rem 1.875rem 1.875rem 6.25rem
+
+            h2
+                font-weight bold
+                font-size 2.125rem
+                line-height 4rem
+            
+            h3
+                font-weight 600
+                font-size 1.25rem
+                line-height 2rem
+            
+            p
+                font-weight lighter
+                font-size 1.25rem
+                line-height 2rem
+            
+            a
+                text-decoration none
+                color white
+        
+        .img-project-2
+            width 50%
+            display flex
+            justify-content center
+            align-items center
+
+            img
+                width 125%
+
+    .project-container-3
+        background-color #3D8FF0
+        width 73.4375rem
+        height 20.5rem
+        display flex
+        margin auto
+        border-radius 4px
+        transition 0.3s ease-out
+        box-shadow 0px 4px 8px 0px rgba(34, 34, 34, 0.16)
+
+        &:hover
+            transform scale(1.04)
+            transition 0.3s ease-out
+            box-shadow 0px 4px 8px 0px rgba(34, 34, 34, 0.32)
+
+        .text-project-3
+            color white
+            width 50%
+            padding 1.875rem 1.875rem 1.875rem 6.25rem
+
+            h2
+                font-weight bold
+                font-size 2.125rem
+                line-height 4rem
+            
+            h3
+                font-weight 600
+                font-size 1.25rem
+                line-height 2rem
+            
+            p
+                font-weight lighter
+                font-size 1.25rem
+                line-height 2rem
+            
+            a
+                text-decoration none
+                color white
+        
+        .img-project-3
+            width 50%
+            display flex
+            justify-content center
+            align-items center
+
+            img
+                width 58%
+
+
+/**
+*   FOOTER
+**/
+
+.footer
+    padding-top 6rem
+
+.footer-bar
+    background-color #50B2DF
+    height 0.5rem
+    width 76.6vw
+    margin-left 11.2vw
+    border-radius 2px
+
+.footer-text
+    display flex
+    justify-content space-between
+    height 19vh
+    width 78.5vw
+    margin-left 11.2vw
+    margin-top 7vh
+
+    ul
+        display flex
+        flex-direction row
+
+        li
+            position relative
+            list-style none
+            margin-left 3.125rem
+            margin-bottom 45px
+
+            a
+                display block
+                padding 1rem 1.875rem
+                margin-top -1rem
+                text-decoration none
+                color black
+                font-weight bold
+                transition color 0.25s
+
+                &:hover
+                    transition color 0.25s
+                    color #50B2DF

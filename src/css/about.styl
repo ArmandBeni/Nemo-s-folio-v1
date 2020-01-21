@@ -1,0 +1,163 @@
+body
+    width 100%
+    margin 0
+    padding 0
+    font-family 'Open Sans', sans-serif
+
+/**
+*   HEADER
+**/
+header 
+    height 12vh
+    top 0
+    left 0
+
+nav.navbar
+    display flex
+    justify-content space-between
+    align-items center
+    width 77vw
+    margin-left 12.2vw
+    margin-top 1rem
+    animation appear 1.5s
+
+    @keyframes appear 
+    {
+        0% {opacity: 0}
+        100% {opacity: 1}
+    }
+
+    img
+        width 18%
+
+    ul
+        display flex
+        flex-direction row
+        padding 0
+
+        li
+            position relative
+            list-style none
+
+            a
+                display block
+                padding 1rem 1.875rem
+                text-decoration none
+                color black
+                font-weight bold
+                transition color 0.25s
+
+                &:hover
+                    transition color 0.25s
+                    color #50B2DF
+
+
+
+/**
+* INTRO
+**/
+
+.container
+    height 80vh
+    display flex
+    align-items center
+    padding 0 12rem
+    animation appear 1.5s
+
+
+.about
+    height 77%
+    display flex
+    align-items center
+
+    .img-container
+        width 100%
+        position relative
+
+        img
+            width 77%
+
+        &::after
+            content ''
+            position absolute
+            top 53%
+            transform translateY(-53%)
+            left 21.5rem
+            background-color #50B2DF
+            border-radius 2px
+            width 0.4rem
+            height calc(100% - 0px)
+            animation sidebar 1s ease-out
+
+            @keyframes sidebar 
+            {
+                0% {height: 0% }
+                100% {height: calc(100% - 0px) }
+            }
+
+    .text-container
+        position relative
+        font-size 17px
+        padding-right 9vw
+
+        h2
+            font-weight 400
+
+        p
+            line-height 40px
+            font-weight lighter
+
+
+
+/**
+*   BACKGROUND
+**/
+.background
+    width 100%
+    background-color #F4FCFF 
+
+/**
+*   FOOTER
+**/
+.footer
+    padding-top 6rem
+    background-color #EDF9FF
+
+.footer-bar
+    background-color #50B2DF
+    height 0.5rem
+    width 76.6vw
+    margin-left 11.2vw
+    border-radius 2px
+
+
+.footer-text
+    display flex
+    justify-content space-between
+    height 19vh
+    width 78.5vw
+    margin-left 11.2vw
+    margin-top 7vh
+
+    ul
+        display flex
+        flex-direction row
+
+        li
+            position relative
+            list-style none
+            margin-left 3.125rem
+            margin-bottom 45px
+
+            a
+                display block
+                padding 1rem 1.875rem
+                margin-top -1rem
+                text-decoration none
+                color black
+                font-weight bold
+                transition color 0.25s
+
+                &:hover
+                    color #50B2DF
+                    transition color 0.25s
